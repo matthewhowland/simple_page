@@ -17,33 +17,39 @@
         </li>
       </ul>
     </div>
-    <!-- end of navigation -->
 
     <!-- heading -->
     <div>
-      <h3>
-        We're Here To Serve You
-      </h3>
-      <p>
-        We're eager to catch that canine so we've installed three landline telephones in our beautiful mountainside cabin. We're waiting
-        by the phones for your call, 24-hours a day.
-      </p>
+      <h3>We're Here To Serve You</h3>
+      <p>We're eager to catch that canine so we've installed three landline telephones in our beautiful mountainside cabin. We're waiting
+        by the phones for your call, 24-hours a day.</p>
     </div>
-    <!-- /heading -->
 
-    <!-- paragraph -->
+    <!-- quick contact information -->
     <div>
-      <h4>
-        Quick contact information
-      </h4>
+      <h4>Quick contact information</h4>
     </div>
-    <!-- /paragraph -->
 
-    <!-- form or images on right side -->
+    <!-- contact form -->
     <div>
       <img src="http://placehold.it/200x300" alt="placeholder image">
     </div>
-    <!-- /form or images on right side -->
+    <div>
+      <form action="/contact" method='POST'>
+        <h3>Contact Us</h3>
+        <label for="name">Name:</label>
+        <input type="text" name='name' required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name='email' required>
+        <br>
+        <label for="message">Message:</label>
+        <textarea name="message" row='5' cols='20' required></textarea>
+        <br>
+        <button type='submit'>Send</button>
+        <input type="submit" value='Send' required>
+      </form>
+    </div>
 
   </body>
 </html>
